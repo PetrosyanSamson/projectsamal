@@ -79,3 +79,17 @@ $('#slick-views-our-clients-attachment-1-3-slider').slick({
         }]
 });
 
+$(document).ready(function() {
+    $('.menu.nav.navbar-nav > li').click(function() {
+        $(this).find('.dropdown-menu-wrapper').slideToggle('fast');
+    });
+});
+
+
+
+window.onload = function () {
+    setTimeout(function () {
+        document.querySelector('.loader').style.display = 'none';
+        document.querySelector('header').classList.add('show');
+    }, 2980);
+};
